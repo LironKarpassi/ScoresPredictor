@@ -60,7 +60,7 @@ const Header = () => {
                         </li>
                         <li>
                             <Link to="/about-page" onClick={menuToggleHandler}>
-                               About Us1
+                               About Us
                             </Link>
                         </li>
                         <li>
