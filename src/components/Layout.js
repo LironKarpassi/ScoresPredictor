@@ -3,10 +3,10 @@ import Header from "./Header";
 
 import classes from "./Layout.module.scss";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, currentUser }) => {
     return (
         <>
-            <Header />
+            <Header userExists={currentUser !== null}/>
             <div className={classes.container}>{children}</div>
         </>
     );

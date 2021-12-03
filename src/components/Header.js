@@ -5,8 +5,9 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import classes from "./Header.module.scss";
 import { Link, useHistory } from "react-router-dom";
+import { auth } from "../api/firebase";
 
-const Header = () => {
+const Header = ({userExists}) => {
     const history = useHistory();
     const [menuOpen, setMenuOpen] = useState(false);
     const [size, setSize] = useState({
@@ -68,8 +69,14 @@ const Header = () => {
                                 Other
                             </Link>
                         </li>
+                        {userExists && <li>
+                            <Link to="/page-score-predictor" onClick={menuToggleHandler}>
+                                Score Predictor
+                            </Link>
+                        </li>}
                     </ul>
-                    <button onClick={ctaClickHandler}>Log In</button>
+                    {userExists ? <div>{auth().currentUser.email}<br/><a href="#" onClick={() => auth().signOut()}>Sign out</a></div> :
+                    <button onClick={ctaClickHandler}>Log In</button> }
                 </nav>
                 <div className={classes.header__content__toggle}>
                     {!menuOpen ? (
