@@ -22,6 +22,8 @@
     top: 5px;
     bottom: 5px;
     border-radius: 25px;
+    background-image: url(./images/Lironp.png) ;
+   background-size:cover;
 }
 
 .Ido{
@@ -33,6 +35,8 @@
     top: 5px;
     bottom: 5px;
     border-radius: 25px;
+    background-image: url(./images/ido.png) ;
+    background-size:cover;
 }
 
 .Michal{
@@ -44,6 +48,8 @@
     top: 5px;
     bottom: 5px;
     border-radius: 25px;
+    background-image: url(./images/michal.png) ;
+    background-size:cover;
 }
 
 .Ran{
@@ -55,6 +61,8 @@
     top: 5px;
     bottom: 5px;
     border-radius: 25px;
+    background-image: url(./images/Ran.png) ;
+    background-size:cover;
 }
 
 .Photo{
