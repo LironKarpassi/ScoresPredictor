@@ -1,0 +1,86 @@
+.AboutUsbackground{
+    background-image: url(./images/field.png);
+    height: 100%;
+    width: 100%;
+}
+.TeamMembers{
+    background-color:none;
+    height: 70%;
+    width: 85%;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+
+}
+
+.Liron{
+    background-color:lightgray;
+    height:415px ;
+    width: 250px;
+    position: relative;
+    left: 5px ;
+    top: 5px;
+    bottom: 5px;
+    border-radius: 25px;
+}
+
+.Ido{
+    background-color:lightgray;
+    height:415px ;
+    width: 250px;
+    position:absolute;
+    left: 280px ;
+    top: 5px;
+    bottom: 5px;
+    border-radius: 25px;
+}
+
+.Michal{
+    background-color:lightgray;
+    height:415px ;
+    width: 250px;
+    position:absolute;
+    left: 555px ;
+    top: 5px;
+    bottom: 5px;
+    border-radius: 25px;
+}
+
+.Ran{
+    background-color: lightgray;
+    height:415px ;
+    width: 250px;
+    position:absolute;
+    left: 830px ;
+    top: 5px;
+    bottom: 5px;
+    border-radius: 25px;
+}
+
+.Photo{
+    background-color: none;
+    height: 250px ;
+    width: 200px;
+    position:absolute;
+    left: 25px ;
+    top: 15px;
+    bottom: 5px; 
+}
+
+.AboutMember{
+    background-color: none;
+    height: 100px ;
+    width: 200px;
+    position:absolute;
+    left: 25px ;
+    top: 290px;
+    bottom: 5px;
+}
+
+h2{
+    color: black;
+    font-size: medium;
+    background-color: none;
+    text-align: center;
+
+}
