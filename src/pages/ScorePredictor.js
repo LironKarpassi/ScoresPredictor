@@ -1,7 +1,10 @@
 import React from "react";
 
 const ScorePredictor = () => {
-    return <h1>Score Predictor</h1>;
+    return <h2>Select 2 Groups To Compare</h2>;
+    
+    
 };
-
+ 
 export default ScorePredictor;
+

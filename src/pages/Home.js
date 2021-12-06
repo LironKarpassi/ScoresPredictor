@@ -1,7 +1,11 @@
 import React from "react";
+import './HomePage.css';
 
 const Home = () => {
-    return <h1>Home Page</h1>;
+return (
+<div className="Homebackground">
+</div>
+)
 };
 
 export default Home;
