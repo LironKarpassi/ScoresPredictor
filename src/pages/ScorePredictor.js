@@ -9,6 +9,7 @@ const ScorePredictor = () => {
     
   };
     return (
+      
         <div className= "Container">
           <h1>Which Teams Are You Insterested To Predict?</h1>
           <div className="groups">
@@ -76,6 +77,7 @@ const ScorePredictor = () => {
           <p>You selected {optionValue} </p>
         </div>
         </div>
+        
       );  
    
 };
