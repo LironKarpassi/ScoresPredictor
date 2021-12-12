@@ -32,7 +32,7 @@ export default function SignUp() {
 
   return (
     <div className="login-wrapper">
-      <h2>Please Sign Up</h2>
+      <h3>Please Sign Up</h3>
       <form>
         <label>
           <p>Email</p>

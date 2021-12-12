@@ -3,7 +3,6 @@ import Layout from "./components/Layout";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
-import Other from "./pages/Other";
 import LoginPage from "./pages/LoginPage";
 import SignUp from "./pages/SignUpPage";
 import { auth } from "./api/firebase";
@@ -43,10 +42,7 @@ function App() {
                 <Route path="/about-page">
                     <AboutUs />
                 </Route>
-                <Route path="/other-page">
-                    <Other />
-                </Route>
-                <Route path="/page-login">
+               <Route path="/page-login">
                     {!currentUser ? <LoginPage /> : <Redirect to='/page-score-predictor'/>}
                 </Route>
                 <Route path="/page-signup">

@@ -17,7 +17,7 @@ export default function Login() {
 
   return(
     <div className="login-wrapper">
-      <h2>Please Log In</h2>
+      <h3>Please Log In</h3>
       <form>
         <label>
           <p>Email</p>

@@ -3,3 +3,26 @@
     height: 100%;
     width: 100%;
 }
+
+.info{
+    
+    width: 550px;
+    height: 400px;
+    position:absolute;
+    left: 55px ;
+    top: 150px;
+    bottom: 5px;
+    color: black;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #16537e,
+        0 0 82px #16537e,
+        0 0 92px #16537e,
+        0 0 102px #16537e,
+        0 0 151px #16537e;
+  }
+  
+  
+

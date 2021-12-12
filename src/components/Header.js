@@ -64,11 +64,6 @@ const Header = ({userExists}) => {
                                About Us
                             </Link>
                         </li>
-                        <li>
-                            <Link to="/other-page" onClick={menuToggleHandler}>
-                                Other
-                            </Link>
-                        </li>
                         {userExists && <li>
                             <Link to="/page-score-predictor" onClick={menuToggleHandler}>
                                 Score Predictor
