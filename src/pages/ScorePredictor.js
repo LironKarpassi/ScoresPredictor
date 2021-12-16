@@ -1,23 +1,30 @@
 import React,  {useState } from "react";
 import { Dropdown, Option } from "./Dropdown.js";
 import './Scorepredictor.css';
+
+
 const ScorePredictor = () => {
     const [optionValue, setOptionValue] = useState("");
     const handleSelect = (e) => {
     console.log(e.target.value);
     setOptionValue(e.target.value);
-    
-  };
-    return (
       
-        <div className= "Container">
+  };
+  const [optionValue1, setOptionValue1] = useState("");
+  const handleSelect1 = (e) => {
+  console.log(e.target.value);
+  setOptionValue1(e.target.value);
+    
+};
+
+    return (
+     
+        <div>
           <h1>Which Teams Are You Insterested To Predict?</h1>
-          <div className="groups">
+          <div className="group1">
           <Dropdown
             formLabel="Choose Home Team"
-            buttonText="Submit Home Team"
             onChange={handleSelect}
-            action="https://jsonplaceholder.typicode.com/posts"
           >
             <Option selected value="Click to see options" />
             <Option value="Sunderland" />
@@ -44,12 +51,11 @@ const ScorePredictor = () => {
           </Dropdown>
           <p>You selected {optionValue} </p>
           </div>
-          <div className="groups">
+          <div className="vs">VS</div>
+          <div className="group2">
           <Dropdown
             formLabel="Choose Away Team"
-            buttonText="Submit Away Team"
-            onChange={handleSelect}
-            action="https://jsonplaceholder.typicode.com/posts"
+            onChange={handleSelect1}
           >
             <Option selected value="Click to see options" />
             <Option value="Sunderland" />
@@ -74,9 +80,12 @@ const ScorePredictor = () => {
             <Option value="Southampton" />
 
           </Dropdown>
-          <p>You selected {optionValue} </p>
+          <p>You selected {optionValue1} </p>
+          
         </div>
-        </div>
+         <button className="submit">Lets Predict The Resaults!</button>
+           
+      </div>
         
       );  
    

@@ -21,12 +21,4 @@ export const StyledLabel = styled.label`
   margin-bottom: 1rem;
 `;
 
-export const StyledButton = styled.input`
-  max-width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  border: solid 2px blue;
-  padding: 0.5rem;
-  border-radius: 1rem;
-`;
+
