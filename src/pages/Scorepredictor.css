@@ -36,6 +36,7 @@
     padding: 0.5rem;
     border-radius: 1rem;
     position:relative;
-    right: -210px;
+    right: -125px;
     top: -60px;
+    cursor: pointer;
 }

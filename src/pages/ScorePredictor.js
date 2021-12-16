@@ -1,7 +1,7 @@
 import React,  {useState } from "react";
 import { Dropdown, Option } from "./Dropdown.js";
 import './Scorepredictor.css';
-
+import Popup from './PopUp';
 
 const ScorePredictor = () => {
     const [optionValue, setOptionValue] = useState("");
@@ -16,6 +16,11 @@ const ScorePredictor = () => {
   setOptionValue1(e.target.value);
     
 };
+const [isOpen, setIsOpen] = useState(false);
+ 
+const togglePopup = () => {
+  setIsOpen(!isOpen);
+}
 
     return (
      
@@ -83,8 +88,17 @@ const ScorePredictor = () => {
           <p>You selected {optionValue1} </p>
           
         </div>
-         <button className="submit">Lets Predict The Resaults!</button>
-           
+         <span className="submit" onClick={togglePopup}>Lets Predict The Resaults!</span>
+         <div>
+        {isOpen && <Popup
+        content={<>
+        <b><h1>And The Resaults Are...</h1></b>
+        <p>blablabla</p>
+        
+      </>}
+      handleClose={togglePopup}
+    />}
+  </div> 
       </div>
         
       );  
