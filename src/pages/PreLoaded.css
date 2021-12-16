@@ -1,0 +1,60 @@
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    text-align: center;
+    background-color: red;
+    right: -200px;
+    max-width: 50%;
+    height: 100%;
+  }
+  
+  .spinner span {
+    font-size: 2rem;
+    animation: fade 1s linear 0s infinite;
+    padding-right: 1rem;
+  }
+  
+  .half-spinner {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #1c03fc;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 0.5s linear 0s infinite;
+  }
+  
+  .completed {
+    font-size: 2rem;
+    color: #1c03fc;
+  
+    animation: bigger 1s linear;
+  }
+  
+  @keyframes bigger {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(2);
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
