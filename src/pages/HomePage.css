@@ -5,7 +5,6 @@
 }
 
 .info{
-    
     width: 550px;
     height: 400px;
     position:absolute;
@@ -23,6 +22,40 @@
         0 0 102px #16537e,
         0 0 151px #16537e;
   }
+
+.desc{
+    color: ivory;
+    text-shadow: none;
+    font-size: large;
+    text-align: center;
+
+}
+
+.titleofdesc{
+    background-color: none;
+    text-align: center;
+    background-color: ivory;
+    font-size: xx-large;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #010f1a,
+    0 0 82px #010f1a,
+    0 0 92px #010f1a,
+    0 0 102px #010f1a,
+    0 0 151px #010f1a;
+    font-size: large;
+   
+}
   
-  
+.AboutTheAlgo{
+    width: 550px;
+    height: 200px;
+    position:absolute;
+    left: 700px ;
+    top: 220px;
+    bottom: 5px;
+
+} 
 

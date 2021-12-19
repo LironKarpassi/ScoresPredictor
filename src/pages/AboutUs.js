@@ -14,7 +14,7 @@ const AboutUs = () => {
                 <div className="Photo"></div>
                     <div className="AboutMember"><h2>Itzhaki Ido</h2>
                     <li className="details">25 Years Old</li>
-                    <li className="details">Favorite Football Group:Chelsea</li></div>
+                    <li className="details">Favorite Football Group: Chelsea</li></div>
                 </div>
                 <div className="Michal">
                 <div className="Photo">

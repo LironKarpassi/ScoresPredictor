@@ -16,25 +16,58 @@ const ScorePredictor = () => {
     setOptionValue1(e.target.value);
   };
   const [isOpen, setIsOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
+  
+  const [result, setResult] = useState("");
+
   const togglePopup = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(false);
+    setIsLoading(false);
   };
-  const getData = () => {
+  const getData = async () => {
 
-    setTimeout(() => setIsOpen(true), 1000);
-    setTimeout(() => setIsLoading(true), 1000);
+    if(optionValue === "Click to see options" || optionValue1 === "Click to see options"
+    || optionValue1 === ""  || optionValue === "") {
+      alert('Please select a team.');
+      return;
+    }
+    else if(optionValue1 === optionValue) {
+      alert('Cannot select same team.');
+      return;
+    }
 
-    setTimeout(() => fetch("https://jsonplaceholder.typicode.com/posts")
-    .then((response) => response.json())
-    .then((json) => {
-      console.log(json);
-      setIsLoading(false);
+    setIsLoading(true);
+
+    setTimeout(() => fetch("https://f5g8f09fqf.execute-api.us-east-1.amazonaws.com/beta", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        home_team: optionValue,
+        away_team: optionValue1,
+      }),
     })
-    .catch((err) => {
-      setIsLoading(false);
-      console.log(err);
-    }), 5000)
+      .then((response) => response.json())
+      .then((json) => {
+
+        if(json.statusCode === 200) {
+          setResult(json.body)
+          
+        }
+        else {
+          setResult("Error: Can't get information from server.");
+        }
+
+      })
+      .then(() => {
+        setIsLoading(false);
+          setIsOpen(true);
+      })
+      .catch((err) => {
+        setIsLoading(false);
+        console.log(err);
+      }), 5000);
   };
 
   return (
@@ -42,7 +75,7 @@ const ScorePredictor = () => {
       <h1>Which Teams Are You Insterested To Predict?</h1>
       <div className="group1">
         <Dropdown formLabel="Choose Home Team" onChange={handleSelect}>
-          <Option selected value="Click to see options" />
+          <Option value="Click to see options" />
           <Option value="Sunderland" />
           <Option value="Chelsea" />
           <Option value="Wolverhampton Wanderers" />
@@ -69,7 +102,7 @@ const ScorePredictor = () => {
       <div className="vs">VS</div>
       <div className="group2">
         <Dropdown formLabel="Choose Away Team" onChange={handleSelect1}>
-          <Option selected value="Click to see options" />
+          <Option value="Click to see options" />
           <Option value="Sunderland" />
           <Option value="Chelsea" />
           <Option value="Wolverhampton Wanderers" />
@@ -94,26 +127,28 @@ const ScorePredictor = () => {
         <p>You selected {optionValue1} </p>
       </div>
       <span className="submit" onClick={getData}>
-      {isLoading && isOpen ? (
-          <PreLoaded />
-        ) : 
-          isOpen ? (
-            <Popup
-              content={
-                <>
-                  <b>
-                    <h1>And The Resaults Are...</h1>
-                  </b>
-                  <p>blablabla</p>
-                </>
-              }
-              handleClose={togglePopup}
-            />
-          )
-         : 'Lets predict the result'}
+        {isLoading === true ? <PreLoaded /> : "Lets Predict The Score"}
       </span>
-  
-      </div>
+
+      {isOpen === true && (
+        <Popup
+          content={
+            <React.Fragment>
+            {result.startsWith("Error") ? <b><h1 className="TitleOfRES">{result}</h1></b> : (
+              <React.Fragment>
+              <b>
+                <h1 className="TitleOfRES"> Our Algorithm Predict That</h1>
+              </b>
+              <p>There Is A {result.substring(1).substring(0, result.length-2)}</p> <br />
+              <p>That The Home Team Is Going To Win</p>
+              </React.Fragment>
+              )}
+            </React.Fragment>
+            }
+          handleClose={togglePopup}
+        />
+      )}
+    </div>
   );
 };
 

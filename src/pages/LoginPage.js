@@ -13,9 +13,8 @@ export default function Login() {
       alert(error.message);
    });   
   }
+return(
 
-
-  return(
     <div className="login-wrapper">
       <h3>Please Log In</h3>
       <form>
@@ -33,5 +32,6 @@ export default function Login() {
         </div>
       </form>
     </div>
-  )
+ );
+  
 }
