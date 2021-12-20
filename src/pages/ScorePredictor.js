@@ -71,10 +71,10 @@ const ScorePredictor = () => {
   };
 
   return (
-    <div>
-      <h1>Which Teams Are You Insterested To Predict?</h1>
+    <div className="main">
+      <h1 className="titleofpage">Which Teams Are You Insterested To Predict?</h1>
       <div className="group1">
-        <Dropdown formLabel="Choose Home Team" onChange={handleSelect}>
+        <Dropdown className="dropdowncss" formLabel="Choose Home Team" onChange={handleSelect}>
           <Option value="Click to see options" />
           <Option value="Sunderland" />
           <Option value="Chelsea" />
@@ -99,9 +99,9 @@ const ScorePredictor = () => {
         </Dropdown>
         <p>You selected {optionValue} </p>
       </div>
-      <div className="vs">VS</div>
+      
       <div className="group2">
-        <Dropdown formLabel="Choose Away Team" onChange={handleSelect1}>
+        <Dropdown className="dropdowncss" formLabel="Choose Away Team" onChange={handleSelect1}>
           <Option value="Click to see options" />
           <Option value="Sunderland" />
           <Option value="Chelsea" />
@@ -148,7 +148,8 @@ const ScorePredictor = () => {
           handleClose={togglePopup}
         />
       )}
-    </div>
+       </div>
+    
   );
 };
 

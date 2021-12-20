@@ -1,31 +1,33 @@
+.main{
+    background-image: url(./images/icons.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.titleofpage{
+    text-align: center;
+    width: 1200px;
+}
+
 .group1 {
     width: 50%;
     float: left;
     padding: 20px;
     position:relative;
-    right: 10px;
+    right: -260px;
+    text-align:left;
  
 }  
+   
 
-.vs{
-    font-size: xx-large;
-    height: 100px;
-    width: 100px;
-    position:relative;
-    right: -275px;
-    top: -100px;
-    
-}
 .group2{
     width: 50%;
     float: left;
     padding: 20px;
     position:relative;
     right: -20px;
-    top: -100px;
-   
-
-    
+    top: 0px;
+    text-align: left;
+       
 }
 .submit{
     max-width: 50%;
@@ -36,11 +38,12 @@
     padding: 0.5rem;
     border-radius: 1rem;
     position:relative;
-    right: -125px;
-    top: -60px;
+    right: -330px;
+    top: 0px;
     cursor: pointer;
 }
 
 .TitleOfRES{
     text-align: center;
 }
+
