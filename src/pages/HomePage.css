@@ -13,10 +13,11 @@
     font-size: x-large;
     position:absolute;
     text-align: center;
-    font-family:  'Lato', sans-serif;
     top: 80px;
     bottom: 5px;
-    color: grey;
+    color: white;
+    text-decoration: none;
+    
 
   }
 
@@ -26,10 +27,11 @@
     font-size: x-large;
     position:absolute;
     text-align: center;
-    font-family:  'Lato', sans-serif;
     top: 350px;
     bottom: 5px;
-    color: grey;
+    color: white;
+    text-decoration: none;
+    
   }
 
 .btn-1 {
@@ -42,7 +44,6 @@
  
 }
 
-footer a,
 .btn-1 a {
   text-decoration: none;
   border: 2px solid grey;
@@ -72,3 +73,37 @@ span {
   
 }
 
+.btn-2 {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+
+}
+
+.btn-2 a {
+  text-decoration: none;
+  border: 2px solid grey;
+  padding: 15px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  top:150px;
+  left: 10px;
+}
+
+.btn-2 a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: calc(100% - 10px);
+  background-color: black;
+  
+}
