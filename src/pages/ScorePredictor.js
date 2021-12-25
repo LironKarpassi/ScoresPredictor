@@ -76,26 +76,26 @@ const ScorePredictor = () => {
       <div className="group1">
         <Dropdown className="dropdowncss" formLabel="Choose Home Team" onChange={handleSelect}>
           <Option value="Click to see options" />
-          <Option value="Sunderland" />
-          <Option value="Chelsea" />
-          <Option value="Wolverhampton Wanderers" />
-          <Option value="Everton" />
-          <Option value="Birmingham City" />
-          <Option value="West Bromwich Albion" />
-          <Option value="Stoke City" />
-          <Option value="Fulham" />
-          <Option value="Manchester City" />
-          <Option value="Arsenal" />
-          <Option value="Newcastle United" />
           <Option value="West Ham United" />
-          <Option value="Manchester United" />
           <Option value="Aston Villa" />
-          <Option value="Tottenham Hotspur" />
-          <Option value="Liverpool" />
           <Option value="Swansea City" />
-          <Option value="Norwich City" />
-          <Option value="Queens Park Rangers" />
+          <Option value="Watford" />
+          <Option value="Sunderland" />
+          <Option value="Tottenham Hotspur" />
           <Option value="Southampton" />
+          <Option value="Crystal Palace" />
+          <Option value="Liverpool" />
+          <Option value="Manchester City" />
+          <Option value="Everton" />
+          <Option value="West Bromwich Albion" />
+          <Option value="Newcastle United" />
+          <Option value="Chelsea" />
+          <Option value="Manchester United" />
+          <Option value="Norwich City" />
+          <Option value="Stoke City" />
+          <Option value="Bournemouth" />
+          <Option value="Arsenal" />
+          <Option value="Leicester City" />
         </Dropdown>
         <p>You selected {optionValue} </p>
       </div>
@@ -103,26 +103,26 @@ const ScorePredictor = () => {
       <div className="group2">
         <Dropdown className="dropdowncss" formLabel="Choose Away Team" onChange={handleSelect1}>
           <Option value="Click to see options" />
-          <Option value="Sunderland" />
-          <Option value="Chelsea" />
-          <Option value="Wolverhampton Wanderers" />
-          <Option value="Everton" />
-          <Option value="Birmingham City" />
-          <Option value="West Bromwich Albion" />
-          <Option value="Stoke City" />
-          <Option value="Fulham" />
-          <Option value="Manchester City" />
-          <Option value="Arsenal" />
-          <Option value="Newcastle United" />
           <Option value="West Ham United" />
-          <Option value="Manchester United" />
           <Option value="Aston Villa" />
-          <Option value="Tottenham Hotspur" />
-          <Option value="Liverpool" />
           <Option value="Swansea City" />
-          <Option value="Norwich City" />
-          <Option value="Queens Park Rangers" />
+          <Option value="Watford" />
+          <Option value="Sunderland" />
+          <Option value="Tottenham Hotspur" />
           <Option value="Southampton" />
+          <Option value="Crystal Palace" />
+          <Option value="Liverpool" />
+          <Option value="Manchester City" />
+          <Option value="Everton" />
+          <Option value="West Bromwich Albion" />
+          <Option value="Newcastle United" />
+          <Option value="Chelsea" />
+          <Option value="Manchester United" />
+          <Option value="Norwich City" />
+          <Option value="Stoke City" />
+          <Option value="Bournemouth" />
+          <Option value="Arsenal" />
+          <Option value="Leicester City" />
         </Dropdown>
         <p>You selected {optionValue1} </p>
       </div>

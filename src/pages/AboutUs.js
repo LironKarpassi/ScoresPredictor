@@ -31,7 +31,8 @@ const AboutUs = () => {
                     <li className="details">Favorite Football Group: Tottenham</li></div>
                 </div>
             </div>
-            <div className="Motivation"></div>
+            <div className="Motivation"><h3><br/>Hi football lovers! We are 4th year students in Industrial Engineering B.S studies, that came up with an idea to help you make better decisions when you gamble on football games of the British league.
+Our machine learning algorithm considers all the football games between 2008-2015 and based on that, calculates the chances for a win in new games happening right now!</h3></div>
         </div>
         )
 };
