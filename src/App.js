@@ -7,7 +7,7 @@ import LoginPage from "./pages/LoginPage";
 import SignUp from "./pages/SignUpPage";
 import { auth } from "./api/firebase";
 import ScorePredictor from './pages/ScorePredictor';
-
+import Information from './pages/Information';
 function App() {
 
     const [currentUser, setCurrentUser] = React.useState();
@@ -42,6 +42,10 @@ function App() {
                 <Route path="/about-page">
                     <AboutUs />
                 </Route>
+                <Route path="/information-page">
+                    <Information />
+                </Route>
+
                <Route path="/page-login">
                     {!currentUser ? <LoginPage /> : <Redirect to='/page-score-predictor'/>}
                 </Route>
@@ -51,6 +55,8 @@ function App() {
                 <Route path="/page-score-predictor">
                     {!currentUser ? <LoginPage /> : <ScorePredictor />}
                 </Route>
+                
+
             </Switch>
         </Layout>
     );

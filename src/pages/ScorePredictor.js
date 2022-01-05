@@ -24,6 +24,9 @@ const ScorePredictor = () => {
     setIsOpen(false);
     setIsLoading(false);
   };
+  const fintTheTeamIcon = () => {
+
+  }
   const getData = async () => {
 
     if(optionValue === "Click to see options" || optionValue1 === "Click to see options"
@@ -67,7 +70,7 @@ const ScorePredictor = () => {
       .catch((err) => {
         setIsLoading(false);
         console.log(err);
-      }), 5000);
+      }), 2000);
   };
 
   return (
