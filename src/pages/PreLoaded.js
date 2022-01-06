@@ -4,8 +4,12 @@ import "./PreLoaded.css";
 function PreLoaded() {
   return (
     <React.Fragment>
-            <span style={{margin: 5}}>{' '}Loading...{' '}</span>
+
+      <div className="loading-container">
+            <span style={{margin: 1}}>
+              Loading...</span>
             <div className="half-spinner"></div>
+      </div>
     </React.Fragment>
   );
 }

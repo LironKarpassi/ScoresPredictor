@@ -57,3 +57,8 @@
       opacity: 1;
     }
   }
+
+  .loading-container{
+    display: flex;
+    align-items: center;
+  }

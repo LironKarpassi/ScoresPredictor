@@ -1,49 +1,52 @@
 .main{
-    background-image: url(./images/icons.png);
+    /* background-image: url(./images/icons.png); */
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .titleofpage{
     text-align: center;
-    width: 1200px;
+    margin-top: 20px;
+
 }
 
-.group1 {
-    width: 50%;
-    float: left;
-    padding: 20px;
-    position:relative;
-    right: -260px;
-    text-align:left;
- 
-}  
+.group1,.group2 {
+    width: 400px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
    
 
-.group2{
-    width: 50%;
-    float: left;
-    padding: 20px;
-    position:relative;
-    right: -20px;
-    top: 0px;
-    text-align: left;
-       
-}
 .submit{
-    max-width: 50%;
+    text-align: center;
     height: 100%;
-    display: flex;
-    justify-content: center;
     border: solid 2px black;
-    padding: 0.5rem;
+    padding: 0.5rem 5.3rem;
     border-radius: 1rem;
-    position:relative;
-    right: -330px;
-    top: 0px;
-    cursor: pointer;
-}
+    cursor: pointer;}
 
 .TitleOfRES{
     text-align: center;
 }
 
+img.logo {
+    width: 100px;
+    height: 100px;
+}
+.img-container{
+    height: 100px;
+    width: 100px;
+}
+
+.group-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.sc-hKwDye{
+    font-weight: 800;}

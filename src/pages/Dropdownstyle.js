@@ -7,10 +7,11 @@ export const DropdownWrapper = styled.form`
 `;
 
 export const StyledSelect = styled.select`
-  max-width: 50%;
-  height: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
+max-width: 100%;
+height: 100%;
+border-radius: 6px;
+padding: 0.5rem;
+margin-bottom: 1rem;
 `;
 
 export const StyledOption = styled.option`
